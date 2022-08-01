@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./assets/styles/reset.css" />
     <link rel="stylesheet" href="./assets/styles/main.css" />
+    <!-- DARK THEME sTYLESHEET -->
+    <!-- <link rel="stylesheet" href="./assets/styles/dark-theme.css"> -->
     <title>Bicycle Shop</title>
   </head>
   <body>
@@ -28,74 +30,117 @@
         </ul>
       </nav>
     </header>
-
     <main class="main">
       <!--========== HOME ==========-->
-      <section class="hero" id="home">
+      <section class="hero section" id="home">
         <div class="hero-wrapper">
           <h1 class="hero-title">Get addicted to freedom</h1>
           <h2 class="hero-subtitle">
-            Feel the weight lifted with the most beloved <br />
-            bike of the month.
+            With the most beloved bike of the month.
           </h2>
           <img src="./assets/images/veloce legion 40.jpg" alt="" class="hero-img img" />
+        </div>
+        <div class="btn-wrapper">
           <a href="#" class="btn">View Reviews</a>
         </div>
       </section>
 
-      <!--========== ABOUT ==========-->
+    <!--========== ABOUT ==========-->
       <section class="about section" id="about">
-        <div class="about-wrapper">
-          <h2 class="section-title">
-            We have a red carpet <br />
-            for you.
-          </h2>
-          <div class="section-description">
+        <h2>
+          We have a red carpet <br/>
+          for you.
+        </h2>
+        <div class="about-wrapper divs-wrapper">
+          <div class="divs-text-wrapper">
             <p>
-              Well, maybe we're not the best nor the biggest bicycle shop in the
+              Maybe we're not the best nor the biggest shop in the
               city, but the moment you
               walk through the door if you can sense one thing that would be our passion for cycles.
             </p>
             <p>
               Sometimes we think if our shelves could talk they'd thank us for
               letting them hold some of the finest local & imported cycles of
-              our time. And almost all of the cycles were recommended by some
-              and many of our beloved cycle enthusiasts, they might get
+              our time.
+              And all of our good friends who recommended those cycles to us, they might get
               thanked as well.
             </p>
           </div>
-          <img src="./assets/images/veloce 603.jpg" alt="" class="img" />
+          <div class="divs-img-wrapper">
+            <img src="./assets/images/veloce 603.jpg" alt="" class="img" />
+          </div>
+        </div>
+        <div class="btn-wrapper">
           <a href="#" class="btn">List of All Available bikes</a>
         </div>
-        <div>
-          <p>
-            Already own a bike ? You're cordially invited to walk around our
-            servicing section and get familiar with the way we operate(!) on bikes that needs a refreshing new start. And hopefully
-            let us fine-tune your's too.
-          </p>
+      </section>
+
+    <!-- ===== SERVICING ===== -->  
+      <section class="servicing section" id="servicing">
+        
+        
+        <div class="servicing-wrapper divs-wrapper">
+          <div class="divs-img-wrapper">
+            <img src="./assets/images/servicing.jpg" alt="" class="img" />
+          </div> 
+          <div class="divs-text-wrapper">
+            <h2>
+              already own a bike ?
+            </h2> 
+            <p>
+              You're cordially invited to walk around our
+              servicing section and get familiar with the way we operate(!) on bikes that needs a refreshing new start. And hopefully
+              let us fine-tune your's too.
+            </p>
+          </div>
+             
         </div>
-        <img src="./assets/images/servicing.jpg" alt="" class="img" />
-        <a href="#" class="btn">FAQs about bike servicing</a>
+        <div class="btn-wrapper">
+          <a href="#" class="btn">FAQs about bike servicing</a>
+        </div>
       </section>
     </main>
 
     <!--========== CONTACT US ==========-->
     <footer>
       <section class="contact section" id="contact">
+        <h2 class="footer-main-heading">
+          Visit Us:
+        </h2>
         <div class="address-wrapper">
-          <h3 class="address-title">Our Address</h3>
-          <ul>
-            <li>Rolling Breeze</li>
-            <li>House 404, Lorem Road, Ipsum City</li>
-            <li>880-174-567-8901</li>
-            <li>rollingbreeze@email.com</li>
-          </ul>
-        </div>
-      </section>
+          <div class="footer-main-branch">
+            <h3 class="footer-sub-heading">Main Branch:
+            </h3>
+            <ul>
+              <li>Rolling Breeze - House 404</li>
+              <li>Lorem Road, Ipsum City.</li>
+              <li>880-123-4567-890</li>
+              <li>rollingbreeze@email.com</li>
+            </ul>
+          </div>
 
-      <p class="footer-copy">
-        &#169; 2022 Haloom Enterprize. All right reserved
-      </p>
+          <div class="footer-map">
+            <h3 class="footer-sub-heading">
+              View in map:
+            </h3>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3644.8352279546352!2d89.20464896095463!3d24.001594941571497!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39fe9bab01587775%3A0x219a9608ce382fb8!2sMental%20Hospital%20Pabna!5e0!3m2!1sen!2sbd!4v1659322040061!5m2!1sen!2sbd" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+
+          <div class="footer-servicing-centres">
+            <h3 class="footer-sub-heading">Servicing Centres:
+            </h3>
+            <ul>
+              <li>Khaibarpass - Chittagong.</li>
+              <li>Naibarpass - Gibraltar.</li>
+              <li>Ghumaibarpass - Azores.</li>
+              <li>Panikhola - Dhaka.</li>
+            </ul>
+          </div>
+        </div>
+        <p class="footer-copy">
+          &#169; 2022 Haloom Enterprize. All right reserved
+        </p>
+      </section>
     </footer>
   </body>
 </html>
