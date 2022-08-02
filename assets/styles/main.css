@@ -13,6 +13,7 @@
   --fs-h2: calc(var(--fs-p) * 1.75);
   --fs-h3: calc(var(--fs-p) * 1.35);
   --fs-btn: calc(var(--fs-p) * .95);
+  --fs-caption: calc(var(--fs-p) * .5);
   --fs-footer: calc(var(--fs-p) * .85);
   --fw-normal: 400;
   --fw-medium: 500;
@@ -84,6 +85,8 @@ a {
   color: var(--color-nav-text);
 }
 
+
+
 .btn-wrapper {
   text-align: center;
   margin-top: var(--white-space);
@@ -111,6 +114,25 @@ a {
 .img {
   border-radius: 7.5px;
 }
+
+figcaption {
+  font-size: var(--fs-caption);
+  color: slategray;
+  font-weight: 300;
+  text-align: right;
+  margin-right: 7.5px;
+  margin-bottom: 1rem;
+}
+
+figcaption a {
+  color: inherit;
+}
+
+figcaption a:hover {
+  text-decoration: underline;
+}
+
+
 
 .section {
   margin: var(--white-space-extended) 0;
@@ -140,9 +162,15 @@ main {
 /* <===== FOOTER =====> */
 .footer-main-heading {
   text-align: center;
-  border-top: 2px dashed var(--color-text);
-  border-bottom: 2px dashed var(--color-text);
+  border-top: 1px dashed var(--color-text);
+  border-bottom: 1px dashed var(--color-text);
+  padding: var(--white-space);
 }
+
+.address-wrapper {
+  margin: var(--white-space-extended) 0;
+}
+
 
 .address-wrapper > div {
   padding: var(--white-space);
@@ -155,6 +183,7 @@ main {
 .footer-map  iframe {
   display: block;
   max-width: 100%;
+  min-height: 100%;
   margin-top: 1.5rem;
 }
 .footer-copy {
@@ -163,24 +192,21 @@ main {
 
 /* <===== MEDIA QUERIES =====> */
 @media screen and (min-width: 1025px) {
-  .divs-wrapper {
+  .flex {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
   }
-  .divs-wrapper > div {
-    max-width: 48%;
+
+  .servicing-img {
+    max-width: 40%;
+  }
+  .servicing-text {
+    max-width: 58%;
+    text-align: justify;
   }
 
-  .address-wrapper {
-    display: flex;
-    justify-content: space-around;
+  .servicing .btn-wrapper {
+    text-align: left;
   }
-
-  .address-wrapper > div {
-    max-width: 30%;
-  }
-
-
-
 }
