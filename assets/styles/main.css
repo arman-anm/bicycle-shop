@@ -146,7 +146,7 @@ body {
   font-size: var(--fs-p);
   color: var(--color-text);
   background-color: var(--color-bg);
-  padding: 0 var(--white-space);
+  padding: var(--white-space);
 }
 
 /* <===== HEADER =====> */
