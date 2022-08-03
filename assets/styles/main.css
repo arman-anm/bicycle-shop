@@ -26,6 +26,7 @@
   --color-h3: black;
   --color-btn-bg: black;
   --color-btn-txt: white;
+  --color-btn-border: dimgrey;
   --color-nav-bg: black;
   --color-nav-text: black;
   --color-active-bg: white;
@@ -99,17 +100,17 @@ a {
   font-size: var(--fs-btn);
   text-transform: capitalize;
   padding: 1rem 2rem;
-  border: 2px solid var(--color-btn-bg);
+  border: 2px solid var(--color-btn-border);
   border-radius: 7.5px;
   transition: .3s;
   text-align: center;
 }
 
 .btn:hover {
-  background-color: var(--color-active-bg);
-  color: var(--color-active-text);
+  background-color: var(--color-btn-txt);
+  color: var(--color-btn-bg);
   font-weight: var(--fw-bold);
-}
+} 
 
 .img {
   border-radius: 7.5px;
@@ -183,7 +184,6 @@ main {
 .footer-map  iframe {
   display: block;
   max-width: 100%;
-  min-height: 100%;
   margin-top: 1.5rem;
 }
 .footer-copy {
@@ -196,6 +196,10 @@ main {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
+  }
+
+  .address-wrapper {
+    justify-content: space-around;
   }
 
   .servicing-img {
