@@ -163,8 +163,8 @@ main {
 /* <===== FOOTER =====> */
 .footer-main-heading {
   text-align: center;
-  border-top: 1px dashed var(--color-text);
-  border-bottom: 1px dashed var(--color-text);
+  border-top: 1px dashed var(--color-btn-border);
+  border-bottom: 1px dashed var(--color-btn-border);
   padding: var(--white-space);
 }
 
