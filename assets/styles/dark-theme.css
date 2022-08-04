@@ -7,8 +7,5 @@
   --color-h3: white;
   --color-btn-bg: #181A1B;
   --color-btn-txt: white;
-  --color-nav-bg: white;
-  --color-nav-text: white;
-  --color-active-bg: black;
-  --color-active-text: white;
+  --color-active-bg: rgba(255, 255, 255, 0.05);
 }

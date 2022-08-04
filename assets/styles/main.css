@@ -12,7 +12,7 @@
   --fs-h1: calc(var(--fs-p) * 3);
   --fs-h2: calc(var(--fs-p) * 1.75);
   --fs-h3: calc(var(--fs-p) * 1.35);
-  --fs-btn: calc(var(--fs-p) * .95);
+  --fs-btn: calc(var(--fs-p) * .80);
   --fs-caption: calc(var(--fs-p) * .5);
   --fs-footer: calc(var(--fs-p) * .85);
   --fw-normal: 400;
@@ -24,13 +24,10 @@
   --color-h1: black;
   --color-h2: black;
   --color-h3: black;
-  --color-btn-bg: black;
+  --color-btn-bg: #181A1B;
   --color-btn-txt: white;
   --color-btn-border: dimgrey;
-  --color-nav-bg: black;
-  --color-nav-text: black;
-  --color-active-bg: white;
-  --color-active-text: black;
+  --color-active-bg: rgba(112, 128, 144, 0.25);
   /* LAYOUT */
   --white-space: clamp(5px, 5vw, 35px);
   --white-space-extended: clamp(50px, 5vw, 100px);
@@ -151,6 +148,21 @@ body {
 
 /* <===== HEADER =====> */
 header {
+  text-transform: capitalize;
+  letter-spacing: 2px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.logo {
+  font-weight: var(--fw-normal);
+}
+
+.logo:hover {
+  font-weight: var(--fw-bold);
+}
+
+.nav-list {
   display: none;
 }
 
@@ -192,19 +204,36 @@ main {
 
 /* <===== MEDIA QUERIES =====> */
 @media screen and (min-width: 1025px) {
+  /* <=== GLOBAL ===> */
   .flex {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
   }
 
-  .address-wrapper {
-    justify-content: space-around;
+  /* <=== Header ===> */
+  .nav-list {
+    display: flex;
+    justify-content: flex-end;
+    font-size: var(--fs-btn);
+    color: var(--color-nav-txt);
   }
 
+  .nav-link {
+    padding: calc(var(--white-space) *.5);
+  }
+
+  .nav-link:hover {
+    border-bottom: 4px solid var(--color-btn-border);
+    background-color: var(--color-active-bg);
+    border-radius: 2.5px;
+    font-weight: var(--fw-medium);
+  }
+  /* <=== SERVICING SECTION ===> */
   .servicing-img {
     max-width: 40%;
   }
+
   .servicing-text {
     max-width: 58%;
     text-align: justify;
@@ -212,5 +241,10 @@ main {
 
   .servicing .btn-wrapper {
     text-align: left;
+  }
+
+  /* <=== ADDRESS SECTION ===> */
+  .address-wrapper {
+    justify-content: space-around;
   }
 }
